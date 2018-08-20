@@ -1,0 +1,39 @@
+.portfolio__filter{
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.filter__button {
+    border: none;
+    background-color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.filter__button:active, .filter__button:focus {
+    outline: none !important;
+}
+
+.filter__button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.filter__button:active,
+.filter__button_checked,
+.filter__button:hover{
+   color: #34b480;
+}
+
+.filter__button:not(:last-child):after{
+    content: ' /';
+    color: black;
+}
+
+.item-board__item{
+    width: 34%;
+    margin: 0 0.2em;
+}
+
+.item__image{
+    max-width: 100%;
+}

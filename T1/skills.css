@@ -1,0 +1,14 @@
+.skills__skills-form{
+    border: 1px solid #34b480;
+}
+
+.skills-form__skill-{}
+
+.skills-form__submit-button{
+    color: white;
+    padding: 0.5em 1em;
+    background-color: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
