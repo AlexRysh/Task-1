@@ -1,14 +1,91 @@
 .skills__skills-form{
+	padding: 1.5em;
     border: 1px solid #34b480;
 }
 
-.skills-form__skill-{}
+.skills-form__skill-wrapper{
+	width: 100%;
+	margin-bottom: 2em;	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.skills-form__input{
+	width: 80%;
+	height: 2em;
+	padding-left: 1em;
+	outline: none;
+}
 
 .skills-form__submit-button{
     color: white;
     padding: 0.5em 1em;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 0.6em;
     outline: none;
     border: none;
+}
+
+/* next */
+
+.skill-table {
+  padding: 20px 0;
+}
+
+.skill-table__item {
+  padding: 8px;
+  margin: 10px 0;
+  color: #fff;
+  background-color: #1cc37c;
+}
+
+.skill-level {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.skill-level__item:nth-last-child(-n + 2) {
+  text-align: right;
+}
+
+.skill-level__item {
+  width: 25%;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.skill-level__item_beginner::before, .skill-level__item_proficient::before, .skill-level__item_expert::before, .skill-level__item_master::after {
+  content: "|";
+  font-size: 12px;
+  color: #ccc;
+}
+
+.skill-level__item_beginner::before {
+  position: relative;
+  bottom: 17px;
+  right: 1px;
+}
+
+.skill-level__item_proficient::before {
+  position: relative;
+  bottom: 17px;
+  left: 35px;
+}
+
+.skill-level__item_expert::before {
+  position: relative;
+  bottom: 17px;
+  left: 20px;
+}
+
+.skill-level__item_master::after {
+  position: relative;
+  bottom: 17px;
+}
+
+.skill-table__error {
+  color: #a51b1b;
+  font-size: 18px;
+  font-weight: bold;
 }

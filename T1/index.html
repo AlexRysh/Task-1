@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="stylesheet" type="text/css" href="contacts.css">
     <link rel="stylesheet" type="text/css" href="skills.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
     <main class="wrapper">
@@ -40,8 +41,8 @@
         </section>
         <section class="contacts">
             <h2 class="contacts__title title">Contacts</h2>
-            <div class="contacts__item contacts__item_phone-number">500 345 242</div>
-            <div class="contacts__item contacts__item_email">office@kamsolutions.pl</div>
+            <div class="contacts__item contacts__item_phone-number"><i class="fa fa-phone fa-fw phone-icon"></i>500 345 242</div>
+            <div class="contacts__item contacts__item_email"><i class="fa fa-envelope fa-fw email-icon" icon></i>office@kamsolutions.pl</div>
         </section>
         <section class="education">
         </section>
@@ -50,15 +51,34 @@
         <section class="skills">
             <h2 class="skills__title title">Skills</h2>
             <form class="skills__skills-form" action="" method="get">
-                <span class="skills-form__input-caption">Skill name:</span>
-                <input class="skills-form__input" type="text" name="skill-name" placeholder="Enter skill name"><br>
-                <span class="skills-form__input-caption">Skill range:</span>
-                <input class="skills-form__input" type="text" name="skill-range" placeholder="Enter skill range"><br>
-                <input class="skills-form__submit-button" type="submit" value="Add skill">
-            </form>
+                <div class="skills-form__skill-wrapper">
+                    <span class="skills-form__input-caption">Skill name:</span>
+                    <input class="skills-form__input skills-form__input_name" type="text" name="skill-name" placeholder="Enter skill name">
+                </div>
+                <div class="skills-form__skill-wrapper">
+                    <span class="skills-form__input-caption">Skill range:</span>
+                    <input class="skills-form__input skills-form__input_range" type="text" name="skill-range" placeholder="Enter skill range">
+                </div>
+                <button class="skills-form__submit-button">Add Skill</button>
+            </form>     
+            <div class="skill-table">
+                <div class="skill-table__item" style="width: 100%">HTML</div>
+                <div class="skill-table__item" style="width: 75%">CSS</div>
+                <div class="skill-table__item" style="width: 60%">jQuery</div>
+                <div class="skill-table__item" style="width: 40%">PHP</div>
+                <div class="skill-table__item" style="width: 25%">Laravel 2</div>
+              </div>
+              <div class="skill-level">
+                <div class="skill-level__item skill-level__item_beginner">Beginner</div>
+                <div class="skill-level__item skill-level__item_proficient">Proficient</div>
+                <div class="skill-level__item skill-level__item_expert">Expert</div>
+                <div class="skill-level__item skill-level__item_master">Master</div>
+              </div>
         </section>
+
     </main>
     <script src="isotope.pkgd.min.js"></script>
     <script src="portfolio.js"></script>
+    <script src="skills.js"></script>
 </body>
 </html>

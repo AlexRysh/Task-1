@@ -1,12 +1,17 @@
 * { margin: 0;
     padding: 0;
-    box-sizing: border-box; }
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
 
-body {
-    font-family: sans-serif;
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
 }
 
 .title{
+	margin: 1.5em 0 2em;
+	font-size: 1.5em;
     color: #34b480;
-    margin: 1em 0 2em;
 }

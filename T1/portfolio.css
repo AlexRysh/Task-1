@@ -6,16 +6,15 @@
 .filter__button {
     border: none;
     background-color: white;
-    font-weight: bolder;
     cursor: pointer;
 }
 
 .filter__button:active, .filter__button:focus {
-    outline: none !important;
+    outline: none;
 }
 
 .filter__button::-moz-focus-inner {
-    border: 0 !important;
+    border: 0;
 }
 
 .filter__button:active,
@@ -25,13 +24,13 @@
 }
 
 .filter__button:not(:last-child):after{
-    content: ' /';
+    content: '\00a0/\00a0';
     color: black;
 }
 
 .item-board__item{
-    width: 34%;
-    margin: 0 0.2em;
+    max-width: 34%;
+    margin: 0 0.1em;
 }
 
 .item__image{
