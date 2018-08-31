@@ -1,3 +1,19 @@
-.contacts__item_phone-number:before{
+.contacts__item{
+	font-weight: bolder;
+}
 
+.phone-icon:before, .email-icon:before{
+	color: #34b480;
+}
+
+.phone-icon{
+	margin: 1em;
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+.email-icon{
+	margin: 1em;
 }
